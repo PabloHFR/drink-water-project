@@ -14,5 +14,5 @@
 *.jpg binary
 
 # Overrides Linguist default behaviour
-dist/* linguist-documentation
-dist/* linguist-vendored
+dist/* linguist-documentation=false
+dist/* linguist-vendored=false
