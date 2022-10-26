@@ -1,0 +1,151 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+:root {
+  --cyan-50: #ecfeff;
+  --cyan-500: #06b6d4;
+  --cyan-900: #164e63;
+
+  --blue-400: #38bdf8;
+  --blue-500: #3b82f6;
+  --blue-700: #1d4ed8;
+}
+
+/* ***** GENERAL STYLES ***** */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: linear-gradient(to right, var(--cyan-500), var(--blue-500));
+  color: var(--cyan-50);
+}
+
+/* ****** HEADER STYLES ****** */
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+}
+
+h1 {
+  margin-top: 24px;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+h2 {
+  margin-top: 24px;
+  font-size: 24px;
+}
+
+/* ***** CONTENT STYLES ***** */
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 48px;
+  margin-top: 24px;
+}
+
+/* ***** BIG CUP STYLES ****** */
+
+.big-cup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  height: 320px;
+  width: 144px;
+  background-color: var(--cyan-50);
+
+  border: solid 4px var(--blue-700);
+  border-radius: 0 0 24px 24px;
+  overflow: hidden;
+}
+
+.remaining {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.liters {
+  color: var(--cyan-900);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+p {
+  color: var(--cyan-900);
+  font-size: 16px;
+}
+
+.percentage {
+  display: flex;
+  justify-content: center;
+
+  background-color: var(--blue-400);
+
+  color: var(--cyan-900);
+  font-size: 32px;
+}
+
+/* ***** SMALL CUPS STYLES ****** */
+
+.second-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.cups {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+
+  width: 288px;
+}
+
+.small-cup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 112px;
+  width: 56px;
+
+  background-color: var(--cyan-50);
+  color: var(--cyan-900);
+  overflow: hidden;
+
+  border: solid 2px var(--blue-700);
+  border-radius: 0 0 12px 12px;
+
+  transition: 0.3s ease-in;
+}
+
+.filled {
+  background-color: var(--blue-400);
+}
