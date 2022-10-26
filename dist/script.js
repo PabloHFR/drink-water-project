@@ -10,17 +10,15 @@ smallCupsElements.forEach((cup, index) => {
 
 function fillSmallCups(index) {
   if (
-    smallCupsElements[index].classList.contains("bg-blue-400") &&
-    !smallCupsElements[index].nextElementSibling.classList.contains(
-      "bg-blue-400"
-    )
+    smallCupsElements[index].classList.contains("filled") &&
+    !smallCupsElements[index].nextElementSibling.classList.contains("filled")
   ) {
     index--;
   }
 
   smallCupsElements.forEach((cup, index2) => {
-    if (index2 <= index) cup.classList.add("bg-blue-400");
+    if (index2 <= index) cup.classList.add("filled");
 
-    if (index2 > index) cup.classList.remove("bg-blue-400");
+    if (index2 > index) cup.classList.remove("filled");
   });
 }

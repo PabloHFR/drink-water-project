@@ -61,10 +61,6 @@ main {
   margin-top: 24px;
 }
 
-.filled {
-  background-color: var(--blue-400);
-}
-
 /* ***** BIG CUP STYLES ****** */
 
 .big-cup {
@@ -148,4 +144,8 @@ h3 {
   border-radius: 0 0 12px 12px;
 
   transition: 0.3s ease-in;
+}
+
+.filled {
+  background-color: var(--blue-400);
 }
